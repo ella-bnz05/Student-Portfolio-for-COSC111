@@ -9,11 +9,23 @@ Objectives:
 
 
 Prerequisites
+
+
 ● Arduino board.
+
+
 ● USB cable to connect the Arduino to your computer.
+
+
 ● Arduino IDE installed on your system.
+
+
 ● Python (3.x) with pySerial, requests and FastAPI installed.
+
+
 pip install pyserial requests fastapi[standard]
+
+
 
 
 Description:
@@ -24,12 +36,21 @@ To run the program, first follow the setup shown in A6-Diagram.png. Then, upload
 
 To trigger an API call whenever the button is pressed, modify the Python script to send an HTTP request using a library like requests.
 
+
 Run the Server:
+
+
 fastapi dev <name_of_file>.py
 
+
 Test the API using Command line:
+
 Turn LED On: curl -X POST http://127.0.0.1:8000/led/on
+
+
 Turn LED Off: curl -X POST http://127.0.0.1:8000/led/off
+
+
 
 Note: This activity is connected to lab-act-5, it is the other arduino setup that can be controlled by this arduino button setup.
 

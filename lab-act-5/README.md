@@ -10,11 +10,23 @@ Objectives:
   3. Create a simple circuit that can be controlled using Serial connection using Arduino and Python
 
 Prerequisites
+
+
 ● Arduino board.
+
+
 ● USB cable to connect the Arduino to your computer.
+
+
 ● Arduino IDE installed on your system.
+
+
 ● Python (3.x) with pySerial, requests and FastAPI installed.
+
+
 pip install pyserial requests fastapi[standard]
+
+
 
 
 Description:
@@ -27,13 +39,27 @@ Run the Server:
 fastapi dev <name_of_file>.py
 
 Test the API using Command line:
+
+
 Turn LED On: curl -X POST http://127.0.0.1:8000/led/on
+
+
 Turn LED Off: curl -X POST http://127.0.0.1:8000/led/off
 
+
+
 Explanation for the Python Code:
+
+
 ● Serial Initialization: Opens the serial connection with the specified port (COM5) and baud rate
 (9600).
+
+
 ● Delay (2 seconds): Allows the Arduino to complete its reset and initialization process.
+
+
 ● Write Commands: Sends 1 to turn on the LED and 0 to turn it off.
+
+
 
 Note: This activity can be connected to lab-act-6, it is the other arduino setup that will control this arduino light set up.
